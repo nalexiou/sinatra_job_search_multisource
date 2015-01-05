@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=" <%= url('/form.css') %>">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+    <script type="text/javascript">
+              $(document).ready(function(){
+          $('#title').focus();
+            $('#text').autosize();
+        });
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+  <form id="paper" method="post" action="/search">
+    <div id="margin">SEARCH.STARTUP.JOBS</div>
+    <textarea placeholder="Developer Marketing Sales Design" id="text" name="keywords" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>  
+    <br>
+    <input id="button" type="submit" value="Search">
+  </form>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=" <%= url('/results.css') %>">
+  </head>
+  <body>
+<h1><span class="blue">&lt;</span>Job<span class="blue">&gt;</span> <span class="yellow">Results</pan></h1>
+<table class="container">
+  <thead>
+    <tr>
+      <th><h1>Sites</h1></th>
+      <th><h1>Keywords</h1></th>
+    </tr>
+  </thead>
+  <tbody>
+        <% @companies_with_openings.each do |site, positions | %>
+          <tr>
+            <td> 
+              <a href="<%= site %>" target ="_blank"><%= site %></a>
+            </td>
+            <td><%= positions.uniq.flatten.sort.join(" ") %></td>
+          </tr>
+         <% end %>
+  </tbody>
+  </table>
+ </body>
+ </html>

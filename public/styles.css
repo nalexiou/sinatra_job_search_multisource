@@ -1,0 +1,95 @@
+body {
+  background-color: #111;
+}
+
+div {
+  margin: 0 auto;
+  padding: 5px 0;
+  position: relative;
+  font: normal 18px/1em Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #EFEFEF;
+}
+div:after {
+  content: "";
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-animation: wormsPong cubic-bezier(0.77, 0, 0.175, 1) 0.8s infinite;
+  -webkit-animation: wormsPong cubic-bezier(0.77, 0, 0.175, 1) 0.8s infinite;
+  animation: wormsPong cubic-bezier(0.77, 0, 0.175, 1) 0.8s infinite;
+  background-color: orange;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+}
+
+@-moz-keyframes wormsPong {
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    right: auto;
+    left: 0;
+  }
+}
+@-webkit-keyframes wormsPong {
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    right: auto;
+    left: 0;
+  }
+}
+@keyframes wormsPong {
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    right: auto;
+    left: 0;
+  }
+}
+html, body {
+  height: 100%;
+}
+
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
