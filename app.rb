@@ -9,7 +9,7 @@ require 'thread'
 require_relative 'httpHandler'
 require_relative 'workers'
 
-set :port, 80
+
  
 get '/' do
 	erb :form
