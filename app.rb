@@ -10,6 +10,7 @@ require_relative 'httpHandler'
 require_relative 'workers'
 
 
+set :bind, '0.0.0.0'
  
 get '/' do
 	erb :form
