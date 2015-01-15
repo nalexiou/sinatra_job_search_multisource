@@ -30,12 +30,24 @@ post '/contact' do
   Pony.mail :to => params[:email],
             :from => ENV['MY_TECHNIKALLY_EMAIL'],
             :subject => "Thanks for contacting me, #{@name}!",
-            :body => erb(:email)
+            :body => erb(:email),
+            :from => ENV['MY_TECHNIKALLY_EMAIL'],
+            :via => :smtp, 
+			:via_options => 
+				{
+				    :address => 'smtp.zoho.com',                     
+				    :port => '587',
+				    :enable_starttls_auto => true,
+				    :user_name => ENV['MY_TECHNIKALLY_EMAIL'],
+				    :password => ENV['MY_PASSWORD'],
+				    :authentication => :login,
+				    :domain => "technikally.com",
+				 }
 
   Pony.mail :to => ENV['MY_PERSONAL_EMAIL'],
             :from => params[:email],
             :subject => "Website Contact Form, #{params[:name]}!",
-            :body => erb(:emailmessage)
+            :body => erb(:emailmessage),
             :from => ENV['MY_TECHNIKALLY_EMAIL'],
             :via => :smtp, 
 			:via_options => 
