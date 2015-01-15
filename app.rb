@@ -22,7 +22,7 @@ get '/' do
 end
 
 post '/contact' do
-	if params[:name].index(" ") >= 0
+	unless params[:name].index(" ").nil?
 		@name = params[:name].split(" ")[0...-1].join(" ")
 	else
 		@name = params[:name]
