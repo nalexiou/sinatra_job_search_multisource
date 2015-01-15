@@ -31,7 +31,6 @@ post '/contact' do
             :from => ENV['MY_TECHNIKALLY_EMAIL'],
             :subject => "Thanks for contacting me, #{@name}!",
             :body => erb(:email),
-            :from => ENV['MY_TECHNIKALLY_EMAIL'],
             :via => :smtp, 
 			:via_options => 
 				{
@@ -45,7 +44,6 @@ post '/contact' do
 				 }
 
   Pony.mail :to => ENV['MY_PERSONAL_EMAIL'],
-            :from => params[:email],
             :subject => "Website Contact Form, #{params[:name]}!",
             :body => erb(:emailmessage),
             :from => ENV['MY_TECHNIKALLY_EMAIL'],
