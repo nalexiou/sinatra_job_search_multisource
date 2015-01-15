@@ -6,14 +6,49 @@ require 'open-uri'
 require 'net/http'
 require 'net/https'
 require 'thread'
+require 'pony'
 require_relative 'httpHandler'
 require_relative 'workers'
 
 
 set :bind, '0.0.0.0'
  
-get '/' do
+get '/search' do
 	erb :form
+end
+
+get '/' do
+	erb :"index"
+end
+
+post '/contact' do
+	if params[:name].index(" ") >= 0
+		@name = params[:name].split(" ")[0...-1].join(" ")
+	else
+		@name = params[:name]
+	end
+  Pony.mail :to => params[:email],
+            :from => ENV['MY_TECHNIKALLY_EMAIL'],
+            :subject => "Thanks for contacting me, #{@name}!",
+            :body => erb(:email)
+
+  Pony.mail :to => ENV['MY_PERSONAL_EMAIL'],
+            :from => params[:email],
+            :subject => "Website Contact Form, #{params[:name]}!",
+            :body => erb(:emailmessage)
+            :from => ENV['MY_TECHNIKALLY_EMAIL'],
+            :via => :smtp, 
+			:via_options => 
+				{
+				    :address => 'smtp.zoho.com',                     
+				    :port => '587',
+				    :enable_starttls_auto => true,
+				    :user_name => ENV['MY_TECHNIKALLY_EMAIL'],
+				    :password => ENV['MY_PASSWORD'],
+				    :authentication => :login,
+				    :domain => "technikally.com",
+				 }
+
 end
 
 post '/search' do

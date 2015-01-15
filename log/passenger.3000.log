@@ -1,0 +1,681 @@
+[ 2015-01-09 09:21:58.6681 1199/0x7fff7f3c7310 agents/Watchdog/Main.cpp:538 ]: Options: { 'analytics_log_user' => 'Nikos', 'cleanup_pidfiles' => 'L3Zhci9mb2xkZXJzLzZtL3dqYl9oN3I1NTM1NW5ncmp5azZxZjBnYzAwMDBnbi9UL3Bhc3Nlbmdlci1zdGFuZGFsb25lLmRmdXZvbi90ZW1wX2Rpcl90b3VjaGVyLnBpZA==', 'default_group' => 'staff', 'default_python' => 'python', 'default_ruby' => '/Users/Nikos/.rvm/gems/ruby-2.1.3/wrappers/ruby', 'default_user' => 'Nikos', 'log_level' => '0', 'max_pool_size' => '6', 'passenger_root' => '/var/folders/6m/wjb_h7r55355ngrjyk6qf0gc0000gn/T/passenger-standalone.dfuvon/locations.ini', 'passenger_version' => '4.0.57', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_passenger_version' => '4.0.57', 'web_server_pid' => '1198', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '-1', 'web_server_worker_uid' => '-1' }
+[ 2015-01-09 09:21:58.7497 1201/0x7fff7f3c7310 agents/HelperAgent/Main.cpp:650 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.1198/generation-0/request
+[ 2015-01-09 09:21:58.8035 1203/0x7fff7f3c7310 agents/LoggingAgent/Main.cpp:321 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.1198/generation-0/logging
+[ 2015-01-09 09:21:58.8038 1199/0x7fff7f3c7310 agents/Watchdog/Main.cpp:728 ]: All Phusion Passenger agents started!
+App 1217 stdout: 
+[ 2015-01-09 09:22:03.1662 1201/0x103c9f000 Pool2/SmartSpawner.h:298 ]: Preloader for /Users/Nikos/Desktop/Programming/Github/sinatra_job_search_multisource started on PID 1217, listening on unix:/tmp/passenger.1.0.1198/generation-0/backends/preloader.fiaxdp
+App 1230 stdout: 
+App 1217 stderr: 127.0.0.1 - - [09/Jan/2015 09:22:03] "HEAD / " 200 882 0.2493
+App 1217 stderr: 127.0.0.1 - - [09/Jan/2015 09:48:58] "GET / " 200 889 0.0977
+App 1217 stderr: 127.0.0.1 - - [09/Jan/2015 09:48:59] "GET /favicon.ico " 404 448 0.0057
+App 1230 stdout: ["Test"]
+App 1230 stdout: ["Test"]
+App 1230 stdout: "Test"
+App 1230 stdout: /\b(Test)s?\b/i
+App 2668 stdout: 
+[ 2015-01-09 09:49:17.2273 1201/0x103de8000 Pool2/SmartSpawner.h:298 ]: Preloader for /Users/Nikos/Desktop/Programming/Github/sinatra_job_search_multisource started on PID 2668, listening on unix:/tmp/passenger.1.0.1198/generation-0/backends/preloader.1fxwow
+App 2683 stdout: 
+App 2668 stderr: 127.0.0.1 - - [09/Jan/2015 09:49:17] "GET / " 200 889 0.0141
+App 1230 stdout: "http://www.pricingengine.com"
+App 1230 stdout: "http://www.pager.com"
+App 1230 stdout: "http://thirstie.com"
+App 1230 stdout: "http://www.key.me"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "https://www.refersion.com/"
+App 1230 stdout: "http://www.awesomenyc.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://bookalokal.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.ivy.com/"
+App 1230 stdout: "http://www.vestorly.com/"
+App 1230 stdout: "http://www.paydunk.com"
+App 1230 stdout: "http://www.soapboxsoaps.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "https://www.rallynow.co"
+App 1230 stdout: "http://placemeter.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.youvisit.com/"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://cartodb.com"
+App 1230 stdout: "http://www.startupinstitute.com/"
+App 1230 stdout: "http://www.uber.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "https://www.docusign.com/"
+App 1230 stdout: "http://vital.ai"
+App 1230 stdout: "http://www.namely.com/"
+App 1230 stdout: "http://wagepoint.com"
+App 1230 stdout: "http://www.knewton.com/"
+App 1230 stdout: #<NoMethodError: undefined method `[]' for nil:NilClass>
+App 1230 stdout: "http://www.pluralsight.com/"
+App 1230 stdout: "http://www.paywithcover.com/"
+App 1230 stdout: "http://www.freezecrowd.com"
+App 1230 stdout: "http://placeiq.com/"
+App 1230 stdout: "http://www.updater.com"
+App 1230 stdout: "http://www.signpost.com"
+App 1230 stdout: "http://www.topi.com"
+App 1230 stdout: "http://www.thehackerati.com"
+App 1230 stdout: "https://www.myclean.com/"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://x.com"
+App 1230 stdout: "http://www.flatiron.com/"
+App 1230 stdout: "http://www.vytaliz.com"
+App 1230 stdout: "http://guguguru.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.paintzen.com"
+App 1230 stdout: "http://www.buncee.com/"
+App 1230 stdout: "http://www.nydrawingbooth.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://yourkarma.com"
+App 1230 stdout: "http://www.atmospheir.com/"
+App 1230 stdout: "http://www.gopriv.com"
+App 1230 stdout: "https://generalassemb.ly/"
+App 1230 stdout: "http://www.adaptly.com/"
+App 1230 stdout: "https://brokermap.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://honaro.com/"
+App 1230 stdout: "http://apifortress.com"
+App 1230 stdout: "https://www.hotelied.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.nyi.net"
+App 1230 stdout: "http://www.echouser.com"
+App 1230 stdout: "http://videoblocks.com"
+App 1230 stdout: "http://videoblocks.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.bandsintown.com/"
+App 1230 stdout: "http://www.bmkllp.com/"
+App 1230 stdout: "https://www.shopography.com"
+App 1230 stdout: "http://www.orikami.net"
+App 1230 stdout: "https://www.lynxsy.com/"
+App 1230 stdout: "http://golfmatchapp.com"
+App 1230 stdout: "https://www.sellsy.com/"
+App 1230 stdout: "http://videoblocks.com"
+App 1230 stdout: "http://videblocks.com"
+App 1230 stdout: "http://www.mobiquire.com"
+App 1230 stdout: "http://www.conversocial.com"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.liquidtalent.com"
+App 1230 stdout: "https://www8.gsb.columbia.edu/"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.radiusnetworks.com"
+App 1230 stdout: "https://www.itsgr82bme.com"
+App 1230 stdout: "http://www.ostrato.com"
+App 1230 stdout: "http://govbrain.com/"
+App 1230 stdout: "http://flycleaners.com"
+App 1230 stdout: "http://photos.com"
+App 1230 stdout: "http://www.elloBEE.com"
+App 1230 stdout: "http://www.bespoke-app.com"
+App 1230 stdout: "http://www.krossover.com/"
+App 1230 stdout: "https://www.schoolkeep.com"
+App 1230 stdout: "http://paywithdash.com/"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/sailthru.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/salonpulse.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/savored.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/schoology.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/seatgeek.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/secondmarket.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/sense-networks.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/shapeways.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/shodogg.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/shoptiques.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/showme.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/sidetour.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/signpost.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/singleplatform.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/skillshare.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/slader.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/smartling.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/snooth.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/social-fresh.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/socialflow.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/sonar.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/songtrust.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/songza.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/spinlister.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/squarespace.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/stamped.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/stellaservice.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/streeteasy.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/stylecaster.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/superpowered.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/svpply.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/the-echo-system.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/the-mindriot.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/theladders.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/timehop.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/toura.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/tracks.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/tradecard.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/travel-tripper.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/trendabl.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/tumblr.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/tutorspree.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/uncommon-goods.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/unigo.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/updater.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/urtak.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/venuebook.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/vimeo.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/vindico.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/visual-revenue.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/vouch2go.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/voxy.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/vyou.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/wanderfly.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/warby-parker.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/xtify.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/ycharts.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/yext.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/yipit.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/yodle.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/yog.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/zeel.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/zocdoc.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/magnify.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/market-publique.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/marketsharing.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/media6degrees.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/mediamath.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/meetup.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/memrise.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/milewise.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/mimeo.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/moonit.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/my-city-way.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/naked-apartments.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/newscred.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/next-jump.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/nosql-weekly.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/nrelate.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/offerpop.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/olo.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/onepager.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/onewire.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/onswipe.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/opensky.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/panelfly.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/paperless-post.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/peek.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/peekyou.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/piictu.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/pixable.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/plyfe.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/posthelpers.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/pricing-engine.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/producteev.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/quirky.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/red-rover.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/redrover.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/refinery29.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/rentenna.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/rightsflow.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/roboinvest.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/rockethub.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/8coupons.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/adcade.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/admarketplace.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/admeld.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/ahalife.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/animoto.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/appaddictive.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/appnexus.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/artsicle.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/aviary.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/axialmarket.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/barrel.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/beenverified.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/behance.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/bespoke-post.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/bestvendor.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/betterment.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/birchbox.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/bitly.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/black-lapel.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/blue-fountain-media.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/bundle.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/businessreel.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/businessweek.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/buzzfeed.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/canvas.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/carrot-creative.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/caseable.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/centzy.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/challengepost.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/chartbeat.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/cheetahmail.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/cinchcast.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/citelighter.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/citypockets.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/clothes-horse.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/comixology.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/conductor.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/consmr.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/contently.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/coursekit.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/crowdtap.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/crowdtwist.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/custora.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/datemyschool.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/daylife.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/dealsurf.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/docracy.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/dotbox.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/dynamicoxygen.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/energyhub.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/estimize.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/etsy.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/faithstreet.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/fancy-hands.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/fashism.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/fitocracy.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/flavorpill.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/food52.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/forrst.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/foursquare.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/franchisehelp.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/freelancers-union.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/friendseat.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/gallerama.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/general-assembly.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/getglue.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/gift-hit.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/grade-spotter.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/gramercyone.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/group-commerce.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/grouper.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/grovo.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/gust.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/harvest.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/hashable.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/honestly-now.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/hotlist.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/howaboutwe.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/hunch.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/icehook-systems.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/ideeli.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/idt-partners.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/immersive-labs.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/ingk-labs.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/intent-media.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/jetsetter.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/jibe.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/joor.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/jux.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/kaptur.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/kargo.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/kikin.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/knewton.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/knodes.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/know-your-meme.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/learnvest.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/lenddo.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/liveintent.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/livestream.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/longtail-video.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/loosecubes.js"
+App 1230 stdout: "http://www.crunchbase.com/cbw/company/lot18.js"
+App 1230 stdout: #<NoMethodError: undefined method `[]' for nil:NilClass>
+App 1230 stdout: "http://cartodb.com/jobs/"
+App 1230 stdout: "http://placemeter.com/jobs"
+App 1230 stdout: "http://www.pricingengine.com/Home/Careers"
+App 1230 stdout: "http://bookalokal.com/jobs"
+App 1230 stdout: "http://songza.com/page/careers/"
+App 1230 stdout: "http://flycleaners.com/jobs.html"
+App 1230 stdout: "http://www.adaptly.com/careers"
+App 1230 stdout: "http://www.adaptly.com/careers"
+App 1230 stdout: "https://angel.co/dash-1/jobs"
+App 1230 stdout: "http://www.namely.com/jobs"
+App 1230 stdout: "http://www.updater.com/jobs"
+App 1230 stdout: "http://www.squarespace.com/about/careers"
+App 1230 stdout: "http://www.ostrato.com/about-us/careers/"
+App 1230 stdout: "http://timehop.com/joinus"
+App 1230 stdout: "http://www.ostrato.com/about-us/careers/"
+App 1230 stdout: "http://www.ostrato.com/about-us/careers/"
+App 1230 stdout: "http://www.vytaliz.com/nurses-1"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.zillow.com/jobs/"
+App 1230 stdout: "https://www.hotelied.com/careers"
+App 1230 stdout: "http://www.krossover.com/jobs/"
+App 1230 stdout: "http://www.signpost.com/careers"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "https://yourkarma.com/jobs"
+App 1230 stdout: "http://grnh.se/kf058s"
+App 1230 stdout: "https://www.docusign.com/company/careers"
+App 1230 stdout: "http://yipit.com/jobs/"
+App 1230 stdout: "http://vital.ai#join"
+App 1230 stdout: "http://www.krossover.com/jobs/"
+App 1230 stdout: "http://www.signpost.com/careers"
+App 1230 stdout: "http://www.knewton.com/careers/"
+App 1230 stdout: "http://corp.bandsintown.com/careers"
+App 1230 stdout: "http://www.uncommongoods.com/careers"
+App 1230 stdout: "http://honaro.com/en/career/add/?m=1"
+App 1230 stdout: "http://www.paintzen.com/employment"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.thehackerati.com/careers"
+App 1230 stdout: "http://www.conversocial.com/about-us/jobs"
+App 1230 stdout: "http://pluralsight.mytribehr.com/careers/index"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "https://www.docusign.com/company/careers"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.yext.com/company/careers/"
+App 1230 stdout: "http://www.echouser.com/who-we-are/#careers"
+App 1230 stdout: "http://www.startupinstitute.com/our-network/hiring-partners/"
+App 1230 stdout: "http://www.nyi.net/careers"
+App 1230 stdout: "http://www.youvisit.com/virtual-tours/jobs/"
+App 1230 stdout: "http://adcade.com#/careers"
+App 1230 stdout: "http://www.key.me/careers"
+App 1230 stdout: "http://ebaycareers.com/home.aspx"
+App 1230 stdout: "http://www.socialflow.com/careers/"
+App 1230 stdout: "http://www.knewton.com/careers/"
+App 1230 stdout: "https://generalassemb.ly/careers"
+App 1230 stdout: "http://shoptiques.com/careers"
+App 1230 stdout: "http://www.appnexus.com/careers"
+App 1230 stdout: "https://www.lynxsy.com/startups"
+App 1230 stdout: "http://www.uber.com/jobs"
+App 1230 stdout: "http://honaro.com/en/info/career"
+App 1230 stdout: "https://www.sellsy.com/aboutsellsy/jobs/"
+App 1230 stdout: "http://grnh.se/kf058s"
+App 1230 stdout: "http://enterprise.waywire.com/jobs/"
+App 2683 stdout: ["developer"]
+App 2683 stdout: ["developer"]
+App 2683 stdout: "developer"
+App 2683 stdout: /\b(developer)s?\b/i
+App 1230 stdout: "http://www.warbyparker.com/jobs"
+App 1230 stdout: "http://www.singleplatform.com/careers"
+App 1230 stdout: "http://www.thehackerati.com/careers"
+App 1230 stdout: "http://www.showme.com/careers"
+App 1230 stdout: "http://www.admarketplace.com/careers.php"
+App 1230 stdout: "http://www.outbrain.com/about/careers"
+App 1230 stdout: "http://www.8coupons.com/home/jobs"
+App 1230 stdout: "http://skillshare.com/careers"
+App 1230 stdout: "http://songtrust.com/jobs"
+App 1230 stdout: "http://www.axial.net/about/careers/"
+App 1230 stdout: "https://www.docusign.com/company/careers"
+App 1230 stdout: "http://www.shapeways.com/jobs?li=footer"
+App 1230 stdout: "http://www.sidetour.com/jobs"
+App 1230 stdout: "http://dstillery.com/who-we-are/join-us/"
+App 1230 stdout: "http://www.nyi.net/careers"
+App 1230 stdout: "http://www.artsicle.com/join"
+App 1230 stdout: "http://adcade.com#/careers"
+App 1230 stdout: "http://cinchcast.com/about/join-the-team/"
+App 1230 stdout: "http://placeiq.com/about-us/careers/"
+App 1230 stdout: "http://www.schoology.com/careers.php"
+App 1230 stdout: "http://www.knewton.com/careers/"
+App 1230 stdout: "http://www.ebaycareers.com"
+App 1230 stdout: "http://www.birchbox.com/about/careers"
+App 1230 stdout: "http://www.mimeo.com/careers/"
+App 1230 stdout: "http://www.yodlecareers.com"
+App 1230 stdout: "http://www.gtnexus.com/about/career-opportunities/"
+App 1230 stdout: "http://www.conductor.com/learn/career-advice/"
+App 1230 stdout: "http://www.quirky.com/about/careers"
+App 1230 stdout: "http://www.onewire.com/f_13-OneWire-Inc.aspx"
+App 1230 stdout: "http://adobe.com/careers"
+App 1230 stdout: "https://www.sailthru.com/careers/"
+App 1230 stdout: "http://www.newscred.com/careers"
+App 1230 stdout: "http://onswipe.com/careers/index.html"
+App 1230 stdout: "https://www.sellsy.com/aboutsellsy/jobs/"
+App 1230 stdout: "http://www.unigo.com#"
+App 1230 stdout: "https://www8.gsb.columbia.edu/about-us/contact-columbia/careers-columbia"
+App 1230 stdout: "http://enterprise.waywire.com/jobs/"
+App 1230 stdout: "http://jobs.beenverified.com"
+App 1230 stdout: "http://facebook.com/Bloombergbusinessweek/"
+App 1230 stdout: "http://careers.crowdtap.com/"
+App 1230 stdout: "http://chartbeat.com/jobs/"
+App 1230 stdout: "http://www.buzzfeed.com/about/jobs"
+App 1230 stdout: "https://bitly.com/pages/careers"
+App 1230 stdout: "http://www.caseable.com/jobs"
+App 1230 stdout: "http://www.conversocial.com/about-us/jobs"
+App 1230 stdout: "http://www.SeatGeek.com/jobs"
+App 1230 stdout: "http://carrotcreative.com/hiring"
+App 1230 stdout: "http://singleplatform.com/careers"
+App 1230 stdout: "http://www.stylecastermediagroup.com/#careers"
+App 1230 stdout: "http://www.bluefountainmedia.com/careers"
+App 1230 stdout: "http://www.admarketplace.com/careers.php"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://outbrain.mytribehr.com/careers/"
+App 1230 stdout: "https://www.betterment.com/careers/"
+App 1230 stdout: "http://info.challengepost.com/jobs"
+App 1230 stdout: "http://www.blacklapel.com/jobs/"
+App 1230 stdout: "http://bespokepost.com/careers"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.lore.com/jobs/"
+App 1230 stdout: "https://itunes.apple.com/us/app/consumr-reviews-barcode-scanner/id519874080?mt=8"
+App 1230 stdout: "http://animoto.com/about/careers"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.meetup.com/jobs/"
+App 1230 stdout: "http://crowdtwist.com/about-us/careers/"
+App 1230 stdout: "http://www.startupinstitute.com/our-network/hiring-partners"
+App 1230 stdout: "http://dstillery.com/who-we-are/join-us/"
+App 1230 stdout: "http://datemyschool.com/jobs"
+App 1230 stdout: "http://www.ahalife.com/jobs"
+App 1230 stdout: "http://vindicogroup.tumblr.com/careers"
+App 1230 stdout: "http://vouch2go.com/jobs/"
+App 1230 stdout: "http://www.clotheshor.se/jobs"
+App 1230 stdout: "http://www.artsicle.com/join"
+App 1230 stdout: "http://www.smartling.com/company/careers/"
+App 1230 stdout: "http://www.daylife.com/careers"
+App 1230 stdout: "http://www.schoology.com/careers.php"
+App 1230 stdout: "http://www.amazon.jobs/team/comixology"
+App 1230 stdout: "http://www.birchbox.com/about/careers"
+App 1230 stdout: "http://www.opensky.com/join"
+App 1230 stdout: "http://www.yodlecareers.com/"
+App 1230 stdout: "http://www.tradecard.com/bridges"
+App 1230 stdout: "http://zurb.com/jobs"
+App 1230 stdout: "http://www.energyhub.com/company"
+App 1230 stdout: "http://www.conductor.com/about-us/careers/"
+App 1230 stdout: "http://adobe.com/careers"
+App 1230 stdout: "https://angel.co/lynxsy/jobs"
+App 1230 stdout: "http://www.memrise.com/jobs/"
+App 1230 stdout: "https://www.sailthru.com/careers/"
+App 1230 stdout: "http://www.newscred.com/careers"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://enterprise.waywire.com/jobs"
+App 1230 stdout: "http://www.freelancersunion.org/about/jobs/"
+App 1230 stdout: "http://www.buzzfeed.com/about/jobs"
+App 1230 stdout: "https://bitly.com/pages/careers"
+App 1230 stdout: "http://carrotcreative.com/hiring"
+App 1230 stdout: "http://www.thehackerati.com/careers"
+App 1230 stdout: "http://www.bluefountainmedia.com/careers"
+App 1230 stdout: "http://outbrain.mytribehr.com/careers/"
+App 1230 stdout: "http://www.meetup.com/find/career-business"
+App 1230 stdout: "http://crowdtwist.com/about-us/careers/"
+App 1230 stdout: "http://www.startupinstitute.com/our-network/hiring-partners"
+App 1230 stdout: "http://dstillery.com/who-we-are/join-us/"
+App 1230 stdout: "http://www.clotheshor.se/jobs"
+App 1230 stdout: "http://www.artsicle.com/join"
+App 1230 stdout: "http://www.smartling.com/company/careers/"
+App 1230 stdout: "http://www.daylife.com/careers"
+App 1230 stdout: "http://placeiq.com/about-us/careers/"
+App 1230 stdout: "http://www.opensky.com/join"
+App 1230 stdout: "http://zurb.com/jobs"
+App 1230 stdout: "http://www.conductor.com/learn/career-advice/"
+App 1230 stdout: "http://www.SecondMarket.com/about/careers"
+App 1230 stdout: "http://www.booker.com/Careers"
+App 1230 stdout: "https://www.sailthru.com/careers/"
+App 1230 stdout: "http://www.custora.com/careers"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://bloomberg.com/careers"
+App 1230 stdout: "http://www.bluefountainmedia.com/careers"
+App 1230 stdout: "http://startupinstitute.com/our-network/hiring-partners"
+App 1230 stdout: "http://www.smartling.com/company/careers/"
+App 1230 stdout: "http://www.opensky.com/join"
+App 1230 stdout: "http://www.conductor.com/about-us/careers/"
+App 1230 stdout: "http://www.booker.com/Careers"
+App 1230 stdout: "https://www.sailthru.com/careers/"
+App 1230 stdout: "http://www.opensky.com/join"
+App 1230 stdout: "http://www.opensky.com/content/jobs"
+App 1230 stdout: "http://www.knewton.com/careers/"
+App 1230 stdout: "http://www.knewton.com/careers/"
+App 1230 stdout: "http://www.knewton.com/careers/"
+App 1230 stdout: "http://icehook.com/jobs"
+App 1230 stdout: "http://www.barrelny.com/careers/"
+App 1230 stdout: "http://www.barrelny.com/careers/"
+App 1230 stdout: "http://www.barrelny.com/careers/"
+App 1230 stdout: "http://www.barrelny.com/careers/"
+App 1230 stdout: "http://www.barrelny.com/careers/"
+App 1230 stdout: "http://www.jetsetter.com/careers"
+App 1230 stdout: "http://www.fitocracy.com/jobs"
+App 1230 stdout: "http://www.offerpop.com/careers/"
+App 1230 stdout: "http://www.offerpop.com/careers/"
+App 1230 stdout: "http://www.offerpop.com/careers"
+App 1230 stdout: "http://www.offerpop.com/careers/"
+App 1230 stdout: "http://www.nextjump.com/careers/home"
+App 1230 stdout: "http://food52.com/jobs"
+App 1230 stdout: "http://www.idtpartners.com/careers"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.jibe.com/company/careers/"
+App 1230 stdout: "http://www.jibe.com/company/careers/"
+App 1230 stdout: "http://www.howaboutwe.com/jobs"
+App 1230 stdout: "http://www.jivesoftware.com/about/company/careers/"
+App 1230 stdout: "http://jobs.cheezburger.com/"
+App 1230 stdout: "http://www.crackle.com/emaillist/subscribe.aspx"
+App 1230 stdout: "http://jobs.nosqlweekly.com/"
+App 1230 stdout: "http://www.imrsv.com/careers"
+App 1230 stdout: "http://www.jwplayer.com/careers/"
+App 1230 stdout: "http://www.fancyhands.com/jobs"
+App 1230 stdout: "http://www.zocdoc.com/careers"
+App 1230 stdout: "http://www.intentmedia.com/jobs"
+App 1230 stdout: "http://www.intentmedia.com/jobs"
+App 1230 stdout: "http://foursquare.com/jobs/"
+App 1230 stdout: "http://jooraccess.com/network#join_our_network"
+App 1230 stdout: "https://www.getharvest.com/careers"
+App 1230 stdout: "http://joor.theresumator.com/"
+App 1230 stdout: "https://joor.theresumator.com/"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://hunch.com/jobs"
+App 1230 stdout: "http://www.meetup.com/Docker-NewYorkCity/events/167180012/"
+App 1230 stdout: "http://www.eventbrite.com/event/5499499150"
+App 1230 stdout: "http://www.corporate.r29.com/careers"
+App 1230 stdout: "http://www.nakedapartments.com/about/jobs"
+App 1230 stdout: "http://hunch.com/jobs"
+App 1230 stdout: "http://www.lot18.com/careers"
+App 1230 stdout: "http://hunch.com/jobs"
+App 1230 stdout: "http://www.franchisehelp.com/franchises/express-employment-professionals/"
+App 1230 stdout: "http://www.etsy.com/careers/?ref=ftr"
+App 1230 stdout: "http://www.grovo.com/careers"
+App 1230 stdout: "http://www.livestream.com/careers"
+App 1230 stdout: "http://www.lenddo.com/careers"
+App 1230 stdout: "http://paperlesspost.com/about/jobs"
+App 1230 stdout: "http://www.ideeli.com/pages/careers"
+App 2683 stdout: "http://vital.ai"
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://generalassemb.ly/careers"
+App 1230 stdout: "https://www.sensenetworks.com/company/careers/"
+App 1230 stdout: "https://www.sensenetworks.com/company/careers/"
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.learnvest.com/we-are-hiring/"
+App 2683 stdout: "http://www.echouser.com"
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://pando.com/2015/01/05/join-us-live-at-5pm-pacific-for-pandolive/"
+App 2683 stdout: "http://yourkarma.com"
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: "http://www.mediamath.com/careers/"
+App 2683 stdout: "http://www.awesomenyc.com"
+App 2683 stdout: "http://www.bmkllp.com/"
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: "http://placemeter.com"
+App 2683 stdout: "http://www.gopriv.com"
+App 2683 stdout: "https://www8.gsb.columbia.edu/"
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: "http://www.krossover.com/"
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: "http://www.namely.com/"
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 1230 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2683 stdout: #<NoMethodError: undefined method `code' for nil:NilClass>
+App 2668 stderr: 127.0.0.1 - - [09/Jan/2015 09:50:35] "POST /search " 200 5738 66.8569
+App 1217 stderr: 127.0.0.1 - - [09/Jan/2015 09:50:46] "POST /search " 200 13258 97.0408
+[ 2015-01-12 23:13:08.7203 1203/0x7fff7f3c7310 agents/LoggingAgent/Main.cpp:289 ]: Caught signal, exiting...
