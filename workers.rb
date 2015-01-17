@@ -1,4 +1,5 @@
 def useWorkers(urlArray, task)
+	begin
 	work_q = Queue.new
 	urlArray.each{|x| work_q.push x }
 	workers = (0...100).map do
@@ -14,4 +15,6 @@ def useWorkers(urlArray, task)
 	  end
 	end
 	workers.map(&:join)
+	rescue Exception => each
+	end
 end

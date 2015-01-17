@@ -17,6 +17,11 @@ get '/search' do
 	erb :form
 end
 
+post '/search' do
+	@keywords = params[:keywords]
+	erb :search
+end
+
 get '/' do
 	erb :"index"
 end
@@ -61,7 +66,7 @@ post '/contact' do
 
 end
 
-post '/search' do
+post '/results' do
 	#GENERATE REGEX BASED ON USER KEYWORDS
 	p keywords_array = params[:keywords].scan(/\b(?<=\")[^\"]+(?=\")|[\w]+\b/)
 	p keywords_array.map!{|x| x.gsub(/\s+/," ").gsub(/[^\w\s]|_/, "")}

@@ -4,7 +4,7 @@ def getResponse(givenurl, limit = 5)
 	 	url = URI.parse(givenurl)
 	 	http = Net::HTTP.new(url.host, url.port)
 		http.read_timeout = 10
-		http.open_timeout = 9
+		http.open_timeout = 8
 		http.use_ssl = (url.scheme == 'https')
 		resp = http.start() do |http|
 			http.get(url.request_uri, 
