@@ -6,16 +6,17 @@
 	<link rel="stylesheet" href=" <%= url('/searching.css') %>">
 </head>
 <body>
-<div class="loader">Loading</div>
+<div class="loader">Searching</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript">
- $.ajax({type: "POST", url: '/results', data: { keywords: <%= "'#{@keywords}'"%>} }).done(function(data) {
- 	//$("#c").remove();
- 	//$("html").html(data);
- 	var newDoc = document.open("text/html", "replace");
-	newDoc.write(data);
-	newDoc.close();
- });
+ $.ajax({type: "POST", url: '/results', data: { keywords: <%= "'#{@keywords}'"%>} })
+ 	.done(function(data) {
+	 	var newDoc = document.open("text/html", "replace");
+		newDoc.write(data);
+		newDoc.close();})
+	.fail(function(jqXHR, textStatus) {
+		$('.loader').text("Search failed.");
+	  alert( "Search failed: " + textStatus );});
 </script>
 </body>
 </html>
