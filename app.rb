@@ -19,7 +19,7 @@ end
 
 post '/search' do
 	keywords_array = params[:keywords].scan(/\b(?<=\")[^\"]+(?=\")|[\w]+\b/)
-	keywords_array.map!{|x| x.gsub(/\s+/," ").gsub(/[^\w\s]|_|\r?\n|r/, "")}
+	keywords_array.map!{|x| x.gsub(/\s+/," ").gsub(/[^\w\s]|_|\r?\n|\r/, "")}
 	@keywords = keywords_array.join("|")
 	erb :search
 end
