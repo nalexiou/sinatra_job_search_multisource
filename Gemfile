@@ -1,6 +1,7 @@
-source 'https://rubygems.org'
- 
-gem 'sinatra'
-gem 'nokogiri'
-gem 'pony'
-gem 'passenger'
+	source 'https://rubygems.org'
+
+	gem 'sinatra'
+	gem 'nokogiri'
+	gem 'pony'
+	gem 'passenger'
+	gem 'json'

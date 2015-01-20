@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     daemon_controller (1.2.0)
+    json (1.8.1)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
@@ -28,6 +29,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json
   nokogiri
   passenger
   pony
