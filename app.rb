@@ -18,7 +18,9 @@ get '/search' do
 end
 
 post '/search' do
-	@keywords = params[:keywords]
+	keywords_array = params[:keywords].scan(/\b(?<=\")[^\"]+(?=\")|[\w]+\b/)
+	keywords_array.map!{|x| x.gsub(/\s+/," ").gsub(/[^\w\s]|_|\r?\n|r/, "")}
+	@keywords = keywords_array.join("|")
 	erb :search
 end
 
@@ -68,10 +70,7 @@ end
 
 post '/results' do
 	#GENERATE REGEX BASED ON USER KEYWORDS
-	p keywords_array = params[:keywords].scan(/\b(?<=\")[^\"]+(?=\")|[\w]+\b/)
-	p keywords_array.map!{|x| x.gsub(/\s+/," ").gsub(/[^\w\s]|_/, "")}
-	p keywords_regex = keywords_array.join("|")
-	p regex_job_title = /\b(#{keywords_regex})s?\b/i
+	regex_job_title = /\b(#{params[:keywords]})s?\b/i
 	# SETUP ARRAYS
 	nytmurls =[]
 	nojobs = []
