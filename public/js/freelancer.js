@@ -38,3 +38,7 @@ $('.navbar-collapse ul li a').click(function() {
 $('.music').on('click', function(){
     $('audio')[0].pause();
 });
+
+if(window.location.hash && $('a[href="'+window.location.hash+'"]').length > 0) {
+        $('a[href="'+window.location.hash+'"]').click();
+}
