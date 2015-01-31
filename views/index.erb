@@ -94,7 +94,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/NikosAvatar.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Technikally</span>
+                        <span class="name arclabeldown">Technikally</span>
                         <hr class="star-light">
                         <div class="skills">Software Engineer ~ Life Learner</div>
                     </div>
@@ -193,7 +193,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
+                    <h2 class="arclabelup">About Me</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -601,6 +601,89 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+
+    <script type="text/javascript" src="js/jquery.arctext.js"></script>
+    <script type="text/javascript">            
+           var $arcdown   = $('.arclabeldown').hide();
+           var $arcup   = $('.arclabelup').hide();
+           //var $aboutme   = $('#aboutmelabel').hide();
+            init();
+            
+            function init() {                
+                $arcdown.show().arctext({radius: -1});
+                $arcup.show().arctext({radius: -1});
+                //$example2.show().arctext({radius: 400, dir: -1});
+                $arcdown.hover(
+                    function(){
+                    $(this).arctext('set', {
+                        radius      : 400, 
+                        dir         : 1,
+                        animation   : {
+                            speed   : 300,
+                            easing  : 'ease-out'
+                        }
+                    });},
+                    function(){
+                    $(this).arctext('set', {
+                        radius      : -1, 
+                        dir         : 1,
+                        animation   : {
+                            speed   : 300,
+                            easing  : 'ease-out'
+                        }
+                    });}
+                    );
+                $arcup.hover(
+                    function(){
+                    $(this).arctext('set', {
+                        radius      : 400, 
+                        dir         : -1,
+                        animation   : {
+                            speed   : 300,
+                            easing  : 'ease-out'
+                        }
+                    });},
+                    function(){
+                    $(this).arctext('set', {
+                        radius      : -1, 
+                        dir         : -1,
+                        animation   : {
+                            speed   : 300,
+                            easing  : 'ease-out'
+                        }
+                    });}
+                    );
+                // $('#button_anim1').on('click', function() {
+                //     $example4.arctext('set', {
+                //         radius      : 300, 
+                //         dir         : -1,
+                //         animation   : {
+                //             speed   : 300,
+                //             easing  : 'ease-out'
+                //         }
+                //     });
+                //     return false;
+                // });
+                // $('#button_anim2').on('click', function() {
+                //     $example4.arctext('set', {
+                //         radius      : 200, 
+                //         dir         : 1, 
+                //         animation   : {
+                //             speed   : 300
+                //         }
+                //     });
+                //     return false;
+                // });
+                // $('#button_reset').on('click', function() {
+                //     $example4.arctext('set', {
+                //         radius      : 300, 
+                //         dir         : 1
+                //     });
+                //     return false;
+                // });
+            
+            };
+    </script/>
 
 </body>
 
