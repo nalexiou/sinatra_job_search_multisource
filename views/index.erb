@@ -601,18 +601,17 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
-
+    <!-- Arctext javascript -->
     <script type="text/javascript" src="js/jquery.arctext.js"></script>
     <script type="text/javascript">            
            var $arcdown   = $('.arclabeldown').hide();
            var $arcup   = $('.arclabelup').hide();
-           //var $aboutme   = $('#aboutmelabel').hide();
-            init();
+            
+           init();
             
             function init() {                
                 $arcdown.show().arctext({radius: -1});
                 $arcup.show().arctext({radius: -1});
-                //$example2.show().arctext({radius: 400, dir: -1});
                 $arcdown.hover(
                     function(){
                     $(this).arctext('set', {
@@ -653,34 +652,6 @@
                         }
                     });}
                     );
-                // $('#button_anim1').on('click', function() {
-                //     $example4.arctext('set', {
-                //         radius      : 300, 
-                //         dir         : -1,
-                //         animation   : {
-                //             speed   : 300,
-                //             easing  : 'ease-out'
-                //         }
-                //     });
-                //     return false;
-                // });
-                // $('#button_anim2').on('click', function() {
-                //     $example4.arctext('set', {
-                //         radius      : 200, 
-                //         dir         : 1, 
-                //         animation   : {
-                //             speed   : 300
-                //         }
-                //     });
-                //     return false;
-                // });
-                // $('#button_reset').on('click', function() {
-                //     $example4.arctext('set', {
-                //         radius      : 300, 
-                //         dir         : 1
-                //     });
-                //     return false;
-                // });
             
             };
     </script/>
