@@ -22,10 +22,10 @@
             </div>
     <form id="paper" method="post" action="/search">
                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div class="form-group col-xs-12 floating-label-form-group controls" id="the-basics">
                                 <h4>Enter keywords below to search for jobs</h4>
                                 <h4>(Hint: To search for a phrase, include in quotes)</h4>
-                                <input type="text" class="form-control" placeholder="Developer &quot;Business Development&quot; Marketing Sales Design" id="text" name="keywords" required="" data-validation-required-message="Please enter some keywords." aria-invalid="false">
+                                <input type="text" class="form-control typeahead" placeholder="Developer &quot;Business Development&quot; Marketing Sales Design" id="text" name="keywords" required="" data-validation-required-message="Please enter some keywords." aria-invalid="false">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -39,5 +39,48 @@
     </form>
           </div>
       </section>
+        <script type="text/javascript" src="<%= url('/js/typeahead.bundle.js') %>"></script>
+        <script type="text/javascript" src="<%= url('/js/jobs.js') %>"></script>
+        <script type="text/javascript">
+                var substringMatcher = function(strs) {
+              return function findMatches(q, cb) {
+                var matches, substrRegex;
+             
+                // an array that will be populated with substring matches
+                matches = [];
+                //match the last typed word if there is more than one
+                var patt = new RegExp('\\s*(\\w+)\$');
+                if (patt.exec(q)[1] !== null){
+                q = patt.exec(q)[1];
+                }
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+             
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function(i, str) {
+                  if (substrRegex.test(str)) {
+                    // the typeahead jQuery plugin expects suggestions to a
+                    // JavaScript object, refer to typeahead docs for more info
+                    matches.push({ value: str });
+                  }
+                });
+             
+                cb(matches);
+              };
+            };
+
+                $('#the-basics .typeahead').typeahead({
+                  hint: true,
+                  highlight: true,
+                  minLength: 1
+                },
+                {
+                  name: 'jobs',
+                  displayKey: 'value',
+                  source: substringMatcher(jobs)
+                });
+
+</script>
   </body>
 </html>
