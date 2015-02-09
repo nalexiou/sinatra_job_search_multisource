@@ -176,8 +176,10 @@ end
 
 useWorkers(cburls, grabWebsiteCrunchBaseJS)
 
+validcompanyurls.map! {|x| x.gsub(/\\$/,'')}
 
 validcompanyurls.uniq!
+
 
 exclude = %w(flv swf png jpg gif asx zip rar tar 7z gz jar js css dtd xsd ico raw mp3 mp4 wav wmv ape aac ac3 wma aiff mpg mpeg avi mov ogg mkv mka asx asf mp2 m1v m3u f4v pdf doc xls ppt pps bin exe rss xml)			
 
