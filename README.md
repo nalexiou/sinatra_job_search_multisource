@@ -1,13 +1,3 @@
---Job Search Scraper by Nikolaos Alexiou--
+Main website running on Amazon AWS EC2. 
 
-Please run this Sinatra application on your local machine. Due to multiple http requests,
-hosting this application on a server requires a significant amount of temporary resources
-that can become expensive.
-
-To run:
-
-1. Clone repository on you machine
-2. Run command "bundle install"
-3. Run command: "ruby app.rb"
-
-The steps above assume that you have Ruby on your machine.
+Deployed using passenger as well as a remote git repository. 
