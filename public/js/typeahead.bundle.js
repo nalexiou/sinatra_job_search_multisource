@@ -1075,12 +1075,15 @@
                 return this.$input.val();
             },
             setInputValue: function setInputValue(value, silent) {
-                var lastIndex = this.$input.val().lastIndexOf(" ")
-                if (lastIndex > -1){
+                var lastIndex = this.$input.val().lastIndexOf(" ");
+                var stringExists = this.$input.val().indexOf(value);
+                if (lastIndex >-1 && stringExists == -1){
                 value = this.$input.val().substring(0, lastIndex) + " " + value;
-                //this.$input.val(value);
-                }   
                 this.$input.val(value + " ");
+                }
+                else if (stringExists == -1) {
+                    this.$input.val(value + " ");
+                }
                 silent ? this.clearHint() : this._checkInputValue();
             },
             resetInputValue: function resetInputValue() {
