@@ -121,11 +121,11 @@ grabtechdaycompanies = Proc.new do |y|
   begin
 	  if resp.code.match(/20\d/)
 	  	name = Nokogiri::HTML(resp.body).css('div.company-name').text
-	  	p Nokogiri::HTML(resp.body).at_css('a.section-content')['href']
+	  	#p Nokogiri::HTML(resp.body).at_css('a.section-content')['href']
 	 	validcompanyurls << Nokogiri::HTML(resp.body).at_css('a.section-content')['href']
 	  end
 	rescue => e
-		p e
+		#p e
 	end
 end
 
@@ -151,15 +151,15 @@ grabnyStartupHubSites = Proc.new do |x|
 	begin
 	  if resp.code.match(/20\d/)
 		    Nokogiri::HTML(resp.body).css("div.cbw_subcontent > script").each do |y|
-		    	p y['src']
+		    	#p y['src']
 		    	cburls << y['src']
 			end
 	  else
-	    puts "\tNot a valid page; response was: #{resp.code}"
+	    #puts "\tNot a valid page; response was: #{resp.code}"
 	    invalidids << x
 	  end
 	rescue => e
-		p e
+		#p e
 	end
 end
 
@@ -170,7 +170,7 @@ grabWebsiteCrunchBaseJS = Proc.new do |x|
 		begin
         	validcompanyurls << Nokogiri::HTML(getResponse(x).body).css("dd>a").last['href'][2..-3]
         rescue => e
-   			p e
+   			#p e
   		end
 end
 
@@ -192,7 +192,7 @@ grabncareerlinks= Proc.new do |z|
 	if resp.code.match(/(2|3)0\d/)
 		Nokogiri::HTML(resp.body).css("a").select{|x| x.text=~ regex_to_match}.each do |y|
 		if !y['href'].nil? && !(y['href'] =~ /admission|student|alumni(s)?/i) then
-			p absolute_uri = URI.join(z, y['href']).to_s
+			#p absolute_uri = URI.join(z, y['href']).to_s
 			careerlinksverified << absolute_uri unless exclude.include?(absolute_uri.split('.').last)
 		end
 	end
@@ -201,7 +201,7 @@ grabncareerlinks= Proc.new do |z|
 		nocareer << url
 	end
 	rescue Exception => err
-		p err
+		#p err
 	end
 end
 
