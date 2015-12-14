@@ -18,6 +18,11 @@ GEM
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.4)
     rake (10.4.2)
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -33,4 +38,5 @@ DEPENDENCIES
   nokogiri
   passenger
   pony
+  rails_12factor
   sinatra
