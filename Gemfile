@@ -5,3 +5,4 @@
 	gem 'pony'
 	gem 'passenger'
 	gem 'json'
+	gem 'rails_12factor'
